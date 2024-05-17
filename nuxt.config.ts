@@ -30,14 +30,17 @@ export default defineNuxtConfig({
     "shadcn-nuxt",
     "@nuxtjs/color-mode",
     "nuxt-icon",
-    "@nuxtjs/i18n"
+    "@nuxtjs/i18n",
   ],
   colorMode: {
     classSuffix: "",
-    preference: "system",
+    preference: "dark",
   },
   shadcn: {
     prefix: "",
     componentDir: "./components/ui",
+  },
+  i18n: {
+    vueI18n: "./i18n.config.ts",
   },
 });
