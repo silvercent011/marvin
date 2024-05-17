@@ -1,4 +1,8 @@
 <template>
   <SideBar />
-  <Mainpage />
+  <ChatArea>
+    <!-- <ChatHeader /> -->
+    <ChatConversationRoll />
+    <ChatPromptArea />
+  </ChatArea>
 </template>
