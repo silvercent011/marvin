@@ -30,6 +30,7 @@ export default defineNuxtConfig({
     "shadcn-nuxt",
     "@nuxtjs/color-mode",
     "nuxt-icon",
+    "@nuxtjs/i18n"
   ],
   colorMode: {
     classSuffix: "",
