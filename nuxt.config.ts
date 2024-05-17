@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-
   nitro: {
     storage: {
       chats: {
@@ -10,9 +9,7 @@ export default defineNuxtConfig({
       },
     },
   },
-
   ssr: false,
-
   vite: {
     clearScreen: false,
     envPrefix: ["VITE_", "TAURI_"],
@@ -27,6 +24,9 @@ export default defineNuxtConfig({
       },
     },
   },
-
-  modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt"]
+  modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt"],
+  shadcn: {
+    prefix: "",
+    componentDir: "./components/ui",
+  },
 });
