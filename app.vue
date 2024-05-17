@@ -3,9 +3,9 @@ import { handleChat } from "./composables/handleChat";
 
 const streamCache = ref("");
 
-const model = ref("");
+const model = ref("phi3");
 
-const prompt = ref("");
+const prompt = ref("Olá");
 
 async function makeRequest() {
   const data = await createChat();

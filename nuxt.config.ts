@@ -10,4 +10,19 @@ export default defineNuxtConfig({
       },
     },
   },
+  ssr: false,
+  vite: {
+    clearScreen: false,
+    envPrefix: ["VITE_", "TAURI_"],
+    server: {
+      strictPort: true,
+      // @ts-ignore
+      host: "0.0.0.0",
+      hmr: {
+        protocol: "ws",
+        host: "0.0.0.0",
+        port: 5183,
+      },
+    },
+  },
 });
