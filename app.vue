@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import { handleChat } from "./composables/handleChat";
 
 const streamCache = ref("");
@@ -15,8 +15,11 @@ async function makeRequest() {
 </script>
 
 <template>
-  <div>
-    {{ streamCache }}
-  </div>
-  <button @click="makeRequest">Call</button>
+  <Mainpage />
+</template> -->
+
+<template>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
