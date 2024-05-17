@@ -8,7 +8,9 @@
         class="border-none flex-1 resize-none rounded-full h-10 bg-transparent"
         placeholder="Type your message..."
       />
-      <Button class="rounded-full">Send</Button>
+      <Button size="icon" class="rounded-full">
+        <Icon name="fluent:arrow-up-12-filled" />
+      </Button>
     </div>
   </form>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex h-full w-64 flex-col border-r bg-gray-50 dark:bg-gray-900 dark:border-gray-700"
+    class="flex h-full w-72 flex-col border-r bg-gray-50 dark:bg-gray-900 dark:border-gray-700"
   >
     <header
       class="flex flex-col items-stretch justify-between border-b py-2 px-4"
@@ -28,7 +28,9 @@
         <Tabs defaultValue="chat" class="flex-1">
           <TabsList class="flex flex-1">
             <TabsTrigger value="chat" class="flex-1">Chat</TabsTrigger>
-            <TabsTrigger value="custom" class="flex-1">Custom GPTs</TabsTrigger>
+            <TabsTrigger value="assistants" class="flex-1"
+              >Assistants</TabsTrigger
+            >
           </TabsList>
           <TabsContent value="chat">
             <div class="flex h-full flex-col gap-5 p-1">
@@ -39,7 +41,7 @@
               <ChatsList />
             </div>
           </TabsContent>
-          <TabsContent value="custom" />
+          <TabsContent value="assistants" />
         </Tabs>
       </div>
     </div>

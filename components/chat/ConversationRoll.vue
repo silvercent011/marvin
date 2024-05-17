@@ -2,13 +2,10 @@
   <div class="overflow-y-auto">
     <div class="flex flex-col gap-6 p-5 container mx-auto px-10">
       <div class="flex items-start gap-4" v-for="i in 100">
-        <img
-          alt="User avatar"
-          class="h-10 w-10 rounded-full"
-          height="{40}"
-          :src="'/placeholder.svg' || ''"
-          :style="{ aspectRatio: '40/40', objectFit: 'cover' }"
-          :width="40"
+        <Icon
+          size="40"
+          name="fluent:bot-sparkle-20-filled"
+          class="aspect-square h-10"
         />
         <div class="flex-1 rounded-lg bg-gray-100 p-4 text-sm dark:bg-gray-800">
           <p>Hello! I'm an AI assistant. How can I help you today?</p>
@@ -23,13 +20,10 @@
             on.
           </p>
         </div>
-        <img
-          alt="User avatar"
-          class="h-10 w-10 rounded-full"
-          height="{40}"
-          :src="'/placeholder.svg' || ''"
-          :style="{ aspectRatio: '40/40', objectFit: 'cover' }"
-          :width="40"
+        <Icon
+          size="40"
+          name="fluent:person-12-filled"
+          class="aspect-square h-10"
         />
       </div>
     </div>
