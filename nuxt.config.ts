@@ -10,7 +10,9 @@ export default defineNuxtConfig({
       },
     },
   },
+
   ssr: false,
+
   vite: {
     clearScreen: false,
     envPrefix: ["VITE_", "TAURI_"],
@@ -25,4 +27,6 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt"]
 });
