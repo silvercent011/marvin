@@ -55,15 +55,19 @@ const { data: chats } = await useLazyFetch("/api/chat");
   </div>
 </template>
 
-<i18n lang="yaml">
-en:
-  config: "Settings"
-  profile: "Profile"
-  chat: "Chat"
-  assistants: "Assistants"
-pt-BR:
-  config: "Configurações"
-  profile: "Perfil"
-  chat: "Conversas"
-  assistants: "Assistentes"
+<i18n lang="json">
+{
+  "en": {
+    "config": "Settings",
+    "profile": "Profile",
+    "chat": "Chat",
+    "assistants": "Assistants"
+  },
+  "pt-BR": {
+    "config": "Configurações",
+    "profile": "Perfil",
+    "chat": "Conversas",
+    "assistants": "Assistentes"
+  }
+}
 </i18n>
